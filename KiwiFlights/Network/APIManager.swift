@@ -43,7 +43,7 @@ class APIManager: APIManaging {
             do {
                 completion(.success(try decoder.decode(Model.self, from: data)))
             } catch {
-                print(error)
+                completion(.failure(error))
             }
         }.resume()
     }

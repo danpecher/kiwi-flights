@@ -25,7 +25,7 @@ class FlightService: FlightServicing {
             case let .success(response):
                 completion(.success(response.data))
             case let .failure(error):
-                print(error)
+                completion(.failure(error))
             }
         }
     }

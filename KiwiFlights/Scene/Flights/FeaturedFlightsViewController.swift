@@ -42,7 +42,14 @@ class FeaturedFlightsViewController: UIViewController {
 
         title = "Flight Offers"
         
-        viewModel.getFlights()
+        refreshControl.beginRefreshing()
+        refresh()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        refresh()
     }
     
     @objc func refresh() {
@@ -84,6 +91,10 @@ extension FeaturedFlightsViewController: FeaturedFlightsViewModelDelegate {
     func didFail(error: Error) {
         DispatchQueue.main.async { [weak self] in
             self?.refreshControl.endRefreshing()
+            
+            let alert = UIAlertController(title: "Error", message: "An error occurred while making a request.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK ☹️", style: .cancel))
+            self?.present(alert, animated: true)
         }
         print(error.localizedDescription)
     }
