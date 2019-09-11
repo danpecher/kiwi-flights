@@ -8,6 +8,47 @@
 
 import UIKit
 
+struct FlightDuration {
+    
+    enum Unit {
+        case day(Int), hour(Int), minute(Int)
+        
+        var unitCharacter: String {
+            switch self {
+            case .day: return "d"
+            case .hour: return "h"
+            case .minute: return "m"
+            }
+        }
+        
+        var value: Int {
+            switch self {
+            case let .day(value): return value
+            case let .hour(value): return value
+            case let .minute(value): return value
+            }
+        }
+    }
+    
+    init(duration: Int) {
+        self.days = .day(duration / (3600 * 24))
+        self.hours = .hour(duration / 3600)
+        self.minutes = .minute((duration % 3600) / 60)
+    }
+    
+    let days: Unit
+    let hours: Unit
+    let minutes: Unit
+    
+    var formatted: String {
+        return [days, hours, minutes].reduce(into: "") { (result, item) in
+            if item.value > 0 {
+                result += "\(item.value)\(item.unitCharacter)"
+            }
+        }
+    }
+}
+
 class RouteCell: UITableViewCell {
 
     @IBOutlet private weak var stackView: UIStackView!
@@ -27,9 +68,9 @@ class RouteCell: UITableViewCell {
             toLabel.text = viewModel.cityTo
             arrivalLabel.text = formatter.string(from: Date(timeIntervalSince1970: TimeInterval(viewModel.arrival)))
             
-            let hours = (viewModel.arrival - viewModel.departure) / 3600
-            let minutes = ((viewModel.arrival - viewModel.departure) % 3600) / 60
-            durationLabel.text = "\(hours)h\(minutes)m"
+            let duration = viewModel.arrival - viewModel.departure
+            print(FlightDuration(duration: duration))
+            durationLabel.text = FlightDuration(duration: duration).formatted
         }
     }
 }
