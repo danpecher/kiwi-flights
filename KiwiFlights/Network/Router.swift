@@ -9,7 +9,7 @@
 import UIKit
 
 enum QueryItem: String {
-    case dateFrom, dateTo, flyFrom, partner, limit, sort, onePerCity = "one_for_city", currency = "curr", locale
+    case dateFrom, dateTo, flyFrom, partner, limit, sort, onePerCity = "one_for_city", currency = "curr", locale, asc
 }
 
 enum Router: Routeable {
@@ -32,7 +32,8 @@ enum Router: Routeable {
                 .sort: "quality",
                 .currency: request.currency,
                 .onePerCity: request.onePerCity ? "1" : "0",
-                .locale: Locale.current.languageCode ?? "en"
+                .locale: Locale.current.languageCode ?? "en",
+                .asc: "0"
             ]
             
             let dateFormatter = DateFormatter()

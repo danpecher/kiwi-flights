@@ -49,7 +49,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="lFR-I3-cho">
-                                <rect key="frame" x="0.0" y="400" width="414" height="462"/>
+                                <rect key="frame" x="0.0" y="400" width="414" height="402"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <sections/>
                             </tableView>
@@ -90,7 +90,7 @@
                             <constraint firstItem="dKo-HK-i9A" firstAttribute="top" secondItem="teA-8Y-xg2" secondAttribute="top" id="gA6-6U-flV"/>
                             <constraint firstItem="ya7-ne-wuI" firstAttribute="trailing" secondItem="VXU-tD-Z1z" secondAttribute="trailing" id="gB1-fB-3At"/>
                             <constraint firstItem="teA-8Y-xg2" firstAttribute="top" secondItem="dFk-fx-rTp" secondAttribute="top" id="gNY-qV-9rR"/>
-                            <constraint firstItem="lFR-I3-cho" firstAttribute="bottom" secondItem="VXU-tD-Z1z" secondAttribute="bottom" id="kPf-Tt-K0F"/>
+                            <constraint firstItem="ya7-ne-wuI" firstAttribute="top" secondItem="lFR-I3-cho" secondAttribute="bottom" id="k2S-jt-0Sd"/>
                             <constraint firstItem="dKo-HK-i9A" firstAttribute="bottom" secondItem="teA-8Y-xg2" secondAttribute="bottom" id="m6T-4z-HgR"/>
                             <constraint firstItem="VXU-tD-Z1z" firstAttribute="trailing" secondItem="hUE-9j-loY" secondAttribute="trailing" constant="20" id="mxg-0X-Nzw"/>
                             <constraint firstItem="lFR-I3-cho" firstAttribute="top" secondItem="teA-8Y-xg2" secondAttribute="bottom" id="n3J-Qu-X48"/>

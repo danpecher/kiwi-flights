@@ -76,6 +76,10 @@ extension FeaturedFlightsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         coordinator?.navigateToDetail(flight: viewModel.items[indexPath.row])
     }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 440
+    }
 }
 
 extension FeaturedFlightsViewController: FeaturedFlightsViewModelDelegate {

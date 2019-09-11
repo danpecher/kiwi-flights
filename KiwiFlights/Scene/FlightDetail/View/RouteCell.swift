@@ -69,7 +69,6 @@ class RouteCell: UITableViewCell {
             arrivalLabel.text = formatter.string(from: Date(timeIntervalSince1970: TimeInterval(viewModel.arrival)))
             
             let duration = viewModel.arrival - viewModel.departure
-            print(FlightDuration(duration: duration))
             durationLabel.text = FlightDuration(duration: duration).formatted
         }
     }

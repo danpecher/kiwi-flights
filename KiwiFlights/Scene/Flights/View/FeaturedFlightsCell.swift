@@ -25,7 +25,7 @@ class FeaturedFlightsCell: UITableViewCell {
             priceLabel.text = viewModel.formattedPrice
             dateLabel.text = viewModel.departureTime.formatted
             
-            ImageService.shared.getImage(destinationId: viewModel.destinationId, size: .thumbnail) { [weak self] image in
+            ImageService.shared.getImage(destinationId: viewModel.destinationId, size: .large) { [weak self] image in
                 DispatchQueue.main.async {
                     self?.backgroundImage.image = image
                 }

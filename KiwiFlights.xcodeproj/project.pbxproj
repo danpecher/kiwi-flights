@@ -35,6 +35,8 @@
 		044F8C7A23298E380099CC2F /* RouteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044F8C7823298E380099CC2F /* RouteCell.xib */; };
 		044F8C7C23299B1E0099CC2F /* DottedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F8C7B23299B1E0099CC2F /* DottedView.swift */; };
 		044F8C7E2329A4280099CC2F /* RouteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F8C7D2329A4280099CC2F /* RouteItem.swift */; };
+		044F8C812329B0EC0099CC2F /* SimpleDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F8C7F2329B0EC0099CC2F /* SimpleDateCell.swift */; };
+		044F8C822329B0EC0099CC2F /* SimpleDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044F8C802329B0EC0099CC2F /* SimpleDateCell.xib */; };
 		04D8DA4923296E3600AD5DAB /* DailyOffersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8DA4823296E3600AD5DAB /* DailyOffersManager.swift */; };
 		04D8DA4B23296E5400AD5DAB /* KeyValueStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8DA4A23296E5400AD5DAB /* KeyValueStoring.swift */; };
 		04D8DA4D23296E6E00AD5DAB /* UserDefaults+KeyValueStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8DA4C23296E6E00AD5DAB /* UserDefaults+KeyValueStoring.swift */; };
@@ -92,6 +94,8 @@
 		044F8C7823298E380099CC2F /* RouteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RouteCell.xib; sourceTree = "<group>"; };
 		044F8C7B23299B1E0099CC2F /* DottedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DottedView.swift; sourceTree = "<group>"; };
 		044F8C7D2329A4280099CC2F /* RouteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteItem.swift; sourceTree = "<group>"; };
+		044F8C7F2329B0EC0099CC2F /* SimpleDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDateCell.swift; sourceTree = "<group>"; };
+		044F8C802329B0EC0099CC2F /* SimpleDateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleDateCell.xib; sourceTree = "<group>"; };
 		04D8DA4823296E3600AD5DAB /* DailyOffersManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyOffersManager.swift; sourceTree = "<group>"; };
 		04D8DA4A23296E5400AD5DAB /* KeyValueStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueStoring.swift; sourceTree = "<group>"; };
 		04D8DA4C23296E6E00AD5DAB /* UserDefaults+KeyValueStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+KeyValueStoring.swift"; sourceTree = "<group>"; };
@@ -186,7 +190,7 @@
 		044BBAE1232563F40046E169 /* FlightDetail */ = {
 			isa = PBXGroup;
 			children = (
-				044F8C7623298E280099CC2F /* Cell */,
+				044F8C7623298E280099CC2F /* View */,
 				044BBAE2232564070046E169 /* FlightDetailViewController.storyboard */,
 				044BBAE4232564190046E169 /* FlightDetailViewController.swift */,
 			);
@@ -202,14 +206,16 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		044F8C7623298E280099CC2F /* Cell */ = {
+		044F8C7623298E280099CC2F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				044F8C7B23299B1E0099CC2F /* DottedView.swift */,
 				044F8C7723298E380099CC2F /* RouteCell.swift */,
 				044F8C7823298E380099CC2F /* RouteCell.xib */,
-				044F8C7B23299B1E0099CC2F /* DottedView.swift */,
+				044F8C7F2329B0EC0099CC2F /* SimpleDateCell.swift */,
+				044F8C802329B0EC0099CC2F /* SimpleDateCell.xib */,
 			);
-			path = Cell;
+			path = View;
 			sourceTree = "<group>";
 		};
 		04D8DA532329753A00AD5DAB /* KiwiFlightsTests */ = {
@@ -269,8 +275,8 @@
 		04FEA2642323B50500AD26EC /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				044BBAE1232563F40046E169 /* FlightDetail */,
 				04FEA2652323B50C00AD26EC /* Flights */,
+				044BBAE1232563F40046E169 /* FlightDetail */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -402,6 +408,7 @@
 				044BBAEC232583E30046E169 /* lineto-circular-pro-bold.ttf in Resources */,
 				04FEA25D2323B4E500AD26EC /* LaunchScreen.storyboard in Resources */,
 				044BBAE3232564070046E169 /* FlightDetailViewController.storyboard in Resources */,
+				044F8C822329B0EC0099CC2F /* SimpleDateCell.xib in Resources */,
 				044BBAD3232552A80046E169 /* FeaturedFlightsCell.xib in Resources */,
 				044F8C7A23298E380099CC2F /* RouteCell.xib in Resources */,
 				044BBAEE232584EA0046E169 /* FeaturedFlightsFooter.xib in Resources */,
@@ -438,6 +445,7 @@
 				044BBAE0232563A60046E169 /* Coordinating.swift in Sources */,
 				04FEA26B2323B58400AD26EC /* AppCoordinator.swift in Sources */,
 				044F8C7C23299B1E0099CC2F /* DottedView.swift in Sources */,
+				044F8C812329B0EC0099CC2F /* SimpleDateCell.swift in Sources */,
 				04D8DA4D23296E6E00AD5DAB /* UserDefaults+KeyValueStoring.swift in Sources */,
 				044F8C7923298E380099CC2F /* RouteCell.swift in Sources */,
 				044BBAC2232549F80046E169 /* APIManager.swift in Sources */,
@@ -645,6 +653,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EX9WAM4HQL;
 				INFOPLIST_FILE = KiwiFlights/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -662,6 +671,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EX9WAM4HQL;
 				INFOPLIST_FILE = KiwiFlights/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
