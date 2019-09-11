@@ -26,20 +26,20 @@
                 <rect key="frame" x="0.0" y="0.0" width="515" height="234"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VDu-pb-f1k">
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VDu-pb-f1k">
                         <rect key="frame" x="5" y="92" width="505" height="50"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="F3x-8m-cBy">
-                                <rect key="frame" x="0.0" y="3" width="94.5" height="44"/>
+                                <rect key="frame" x="0.0" y="3" width="126.5" height="44"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLO-jg-QMJ">
-                                        <rect key="frame" x="25.5" y="0.0" width="43.5" height="22"/>
+                                        <rect key="frame" x="41.5" y="0.0" width="43.5" height="22"/>
                                         <fontDescription key="fontDescription" name="Circular-Bold" family="Circular" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpe-9z-w0B">
-                                        <rect key="frame" x="29" y="22" width="37" height="22"/>
+                                        <rect key="frame" x="44.5" y="22" width="37" height="22"/>
                                         <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -47,19 +47,22 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hEG-UI-8lH" customClass="DottedView" customModule="KiwiFlights" customModuleProvider="target">
-                                <rect key="frame" x="102.5" y="0.0" width="94.5" height="50"/>
+                                <rect key="frame" x="134.5" y="0.0" width="40" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Ef6-1Z-QSU"/>
+                                </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xXN-i0-wXZ">
-                                <rect key="frame" x="205" y="0.0" width="95" height="50"/>
+                                <rect key="frame" x="182.5" y="0.0" width="140.5" height="50"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plane" translatesAutoresizingMaskIntoConstraints="NO" id="TaM-RE-0Xu">
-                                        <rect key="frame" x="0.0" y="0.0" width="95" height="25"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="140.5" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="0CI-OP-QXe"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2h25m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2BD-8f-nff">
-                                        <rect key="frame" x="0.0" y="25" width="95" height="25"/>
+                                        <rect key="frame" x="0.0" y="25" width="140.5" height="25"/>
                                         <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -67,26 +70,33 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pdC-8N-t3v" customClass="DottedView" customModule="KiwiFlights" customModuleProvider="target">
-                                <rect key="frame" x="308" y="0.0" width="94.5" height="50"/>
+                                <rect key="frame" x="331" y="0.0" width="40" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="yaV-l2-w4p"/>
+                                </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="IVC-8Z-p0Y">
-                                <rect key="frame" x="410.5" y="3" width="94.5" height="44"/>
+                                <rect key="frame" x="379" y="3" width="126" height="44"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C74-2I-J6b">
-                                        <rect key="frame" x="0.0" y="0.0" width="94.5" height="22"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="126" height="22"/>
                                         <fontDescription key="fontDescription" name="Circular-Bold" family="Circular" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gi9-sV-4Ge">
-                                        <rect key="frame" x="0.0" y="22" width="94.5" height="22"/>
-                                        <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="16"/>
+                                        <rect key="frame" x="0.0" y="22" width="126" height="22"/>
+                                        <fontDescription key="fontDescription" name="Circular-Book" family="Circular" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="F3x-8m-cBy" firstAttribute="width" secondItem="VDu-pb-f1k" secondAttribute="width" multiplier="0.25" id="ZZG-oy-vWX"/>
+                            <constraint firstItem="IVC-8Z-p0Y" firstAttribute="width" secondItem="VDu-pb-f1k" secondAttribute="width" multiplier="0.25" id="cCp-mB-5L5"/>
+                        </constraints>
                     </stackView>
                 </subviews>
                 <constraints>
